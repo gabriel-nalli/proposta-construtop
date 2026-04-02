@@ -285,8 +285,13 @@
     }
 
     /* ─ Monthly ─ */
-    .plan-monthly {
+    .plan-monthly-container {
       margin: 16px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .plan-monthly {
       background: var(--cinza-bg);
       border-radius: 12px;
       padding: 14px 16px;
@@ -519,14 +524,26 @@
         </div>
       </div>
 
-      <div class="plan-monthly">
-        <div>
-          <div class="monthly-label">Manutenção e Alimentação Mensal</div>
-          <div class="monthly-period">Hospedagem + atualizações + inclusões no site a cada 10 dias.</div>
+      <div class="plan-monthly-container">
+        <div class="plan-monthly">
+          <div>
+            <div class="monthly-label">Manutenção Base</div>
+            <div class="monthly-period">Hospedagem + suporte<br>e atualizações de sistema.</div>
+          </div>
+          <div>
+            <span class="monthly-price">R$ 400</span>
+            <span class="monthly-per">/mês</span>
+          </div>
         </div>
-        <div>
-          <span class="monthly-price">R$ 1.000</span>
-          <span class="monthly-per">/mês</span>
+        <div class="plan-monthly" style="border: 1px solid var(--laranja); background: #FFF7ED;">
+          <div>
+            <div class="monthly-label" style="color: var(--laranja-dark);">Manutenção + Alimentação</div>
+            <div class="monthly-period">Tudo da Base + atualizações<br>e inserções a cada 10 dias.</div>
+          </div>
+          <div>
+            <span class="monthly-price" style="color: var(--laranja-dark);">R$ 1.000</span>
+            <span class="monthly-per">/mês</span>
+          </div>
         </div>
       </div>
     </div>
@@ -589,14 +606,26 @@
         </div>
       </div>
 
-      <div class="plan-monthly">
-        <div>
-          <div class="monthly-label">Manutenção e Alimentação Mensal</div>
-          <div class="monthly-period">Hospedagem + IA + atualizações + inclusões no site a cada 10 dias.</div>
+      <div class="plan-monthly-container">
+        <div class="plan-monthly">
+          <div>
+            <div class="monthly-label">Manutenção Base</div>
+            <div class="monthly-period">Hospedagem + IA<br>e suporte técnico.</div>
+          </div>
+          <div>
+            <span class="monthly-price">R$ 600</span>
+            <span class="monthly-per">/mês</span>
+          </div>
         </div>
-        <div>
-          <span class="monthly-price">R$ 1.200</span>
-          <span class="monthly-per">/mês</span>
+        <div class="plan-monthly" style="border: 1px solid var(--laranja); background: #FFF7ED;">
+          <div>
+            <div class="monthly-label" style="color: var(--laranja-dark);">Manutenção + Alimentação</div>
+            <div class="monthly-period">Tudo da Base + atualizações<br>e inserções a cada 10 dias.</div>
+          </div>
+          <div>
+            <span class="monthly-price" style="color: var(--laranja-dark);">R$ 1.200</span>
+            <span class="monthly-per">/mês</span>
+          </div>
         </div>
       </div>
     </div>
